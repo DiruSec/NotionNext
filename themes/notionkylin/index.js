@@ -231,14 +231,14 @@ const LayoutSlug = props => {
                     { post?.type === 'Post' && (
                     <ArticleFooter {...props} />)}
                     <DisqusJS
-                      shortname={siteConfig('DISQUS_SHORTNAME')}
-                      siteName={siteConfig('DISQUS_SITENAME')}
+                      shortname={siteConfig('COMMENT_DISQUS_SHORTNAME')}
+                      siteName={siteConfig('COMMENT_DISQUS_SITENAME')}
                       identifier={post?.slug}
                       url=""
-                      api={siteConfig('DISQUS_API')}
-                      apikey={siteConfig('DISQUS_APIKEY')}
-                      admin={siteConfig('DISQUS_ADMIN')}
-                      adminLabel={siteConfig('DISQUS_ADMINLABEL')}
+                      api={siteConfig('COMMENT_DISQUS_API')}
+                      apikey={siteConfig('COMMENT_DISQUS_APIKEY')}
+                      admin={siteConfig('COMMENT_DISQUS_ADMIN')}
+                      adminLabel={siteConfig('COMMENT_DISQUS_ADMINLABEL')}
                     />
                     {/* <Comment frontMatter={post} /> */}
                 </article>
