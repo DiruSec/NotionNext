@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { siteConfig } from '@/lib/config'
 
 const Tags = props => {
   const { tagOptions, tag } = props

@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { useGlobal } from '@/lib/global'
 import { useImperativeHandle, useRef, useState } from 'react'
+import { siteConfig } from '@/lib/config'
 
 let lock = false
 
